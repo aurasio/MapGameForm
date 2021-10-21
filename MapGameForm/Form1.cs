@@ -68,7 +68,7 @@ namespace MapGameForm
         }
         public void button1_Click(object sender, EventArgs e)
         {
-           // int buttonInt = Array.IndexOf(btnArray, sender as Button); //this is an error, cannot refer to btnArray as it doesnt exist in this context. not sure how to get around this
+           int buttonInt = Array.IndexOf(btnArray, sender as Button); //this is an error, cannot refer to btnArray as it doesnt exist in this context. not sure how to get around this
             
         }
     }
