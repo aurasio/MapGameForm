@@ -30,10 +30,7 @@ namespace MapGameForm
             int[] flag = new int[3];
             string[] imageCodeArray;
             string filePath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.FullName, "Resources");
-            string path = "C:\\Users\\George\\Pictures\\flagsoftheworld\\";
             imageCodeArray = Directory.GetFiles(filePath, "*");
-            while (true)
-            {
                 currentFlag = r.Next(0, 256);
                 temp = r.Next(0, 256);
                 while (temp == currentFlag)
@@ -68,12 +65,10 @@ namespace MapGameForm
                         temp++;
                     }
                 }
-            }
-
         }
         public void button1_Click(object sender, EventArgs e)
         {
-            int buttonInt = Array.IndexOf(, sender as Button);
+           // int buttonInt = Array.IndexOf(btnArray, sender as Button); //this is an error, cannot refer to btnArray as it doesnt exist in this context. not sure how to get around this
             
         }
     }
